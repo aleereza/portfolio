@@ -1,10 +1,10 @@
-export const title = "My Title"
+export const title = "Alireza B."
 export const navbarLinks = [
   { text: "About", path: "/about" },
   { text: "Projects", path: "/projects" },
   { text: "Contact", path: "/contact" },
 ]
-
+export const intro = ""
 export const logo = ""
 export const author = ""
 export const url = ""
