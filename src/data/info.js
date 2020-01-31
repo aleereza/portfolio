@@ -10,12 +10,10 @@ export const author = ""
 export const url = ""
 export const defaultDescription = ""
 export const socialLinks = {
-  twitter: "",
-  github: "",
-  linkedin: "",
-  instagram: "",
-  youtube: "",
-  google: "",
+  twitter: "https://twitter.com/aleerezaa",
+  github: "https://github.com/aleereza",
+  linkedin: "https://www.linkedin.com/in/alireza-barkhordari/",
+  codepen: "https://codepen.io/aleereza",
 }
 export const googleAnalyticsID = ""
 export const themeColor = ""
@@ -28,7 +26,7 @@ export const address = {
   zipCode: "ZipCode",
 }
 export const contact = {
-  email: "email",
+  email: "alireza.barkhordari@gmail.com",
   phone: "phone number",
 }
 export const foundingDate = ""

@@ -1,14 +1,25 @@
 import React from "react"
 import SEO from "../components/seo"
+import SocialLinks from "../components/Social/social_links"
+import { css } from "@emotion/core"
 
 const IndexPage = props => {
   const projectsData = props.data.allProjects.edges
-  console.log("here!", projectsData[0])
+  const introStyle = css`
+    font-size: 3rem;
+    line-height: 1;
+    /* font-family: "Montserrat"; */
+  `
   return (
     <>
       <SEO title="Home" />
-      <p>I am a front-end developer, mostly enjoying React and Gatsby.</p>
-      <p>and I am an AWS certified developer and interested in DevOps.</p>
+      <p css={introStyle}>
+        I am a front-end developer, mostly enjoying React and Gatsby.
+      </p>
+      <p css={introStyle}>
+        and I am an AWS certified developer and interested in DevOps.
+      </p>
+      <SocialLinks />
       <div>
         <h1>My Projects:</h1>
         {projectsData.map((project, index) => (
