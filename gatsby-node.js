@@ -5,12 +5,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const projectTemplate = path.resolve(`src/templates/project.js`)
   const result = await graphql(`
     {
-      allMarkdownRemark(sort: { fields: frontmatter___date }, limit: 10) {
+      allMarkdownRemark(sort: { fields: frontmatter___index }, limit: 10) {
         edges {
           node {
             html
             frontmatter {
-              date
+              index
               path
               title
             }

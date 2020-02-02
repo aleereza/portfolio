@@ -1,23 +1,23 @@
 module.exports = {
   siteMetadata: {
-    title: `Portfolio Starter`,
-    description: ``,
-    author: `@aleereza`,
+    title: `Alireza Barkhordari - Web Developer`,
+    description: `I am a front-end developer, mostly enjoying React and Gatsby, and I am an AWS certified developer and interested in DevOps.`,
+    author: `@aleerezaa`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `projects`,
+        path: `${__dirname}/src/data/projects`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `projects`,
-        path: `${__dirname}/src/data/projects`,
+        name: `project_images`,
+        path: `${__dirname}/src/images/projects`,
       },
     },
     {

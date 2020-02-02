@@ -17,7 +17,7 @@ class Header extends React.Component {
 
   render() {
     const headerStyle = css`
-      background-color: pink;
+      /* background-color: pink; */
     `
 
     const overlay = css`
@@ -33,10 +33,14 @@ class Header extends React.Component {
       `}
     `
 
+    const containerInStyleAddition = css`
+      border-bottom: 1px solid black;
+    `
+
     return (
       <header css={[containerOutStyle, headerStyle]}>
         <div css={overlay} onClick={this.handleClick}></div>
-        <div css={containerInStyle}>
+        <div css={[containerInStyle, containerInStyleAddition]}>
           <Navbar status={this.state.isSidebarOn} toggle={this.handleClick} />
           <Sidebar status={this.state.isSidebarOn} toggle={this.handleClick} />
         </div>

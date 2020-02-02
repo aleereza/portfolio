@@ -1,7 +1,7 @@
 ---
 path: "/SFU-Multimedialab"
-date: 2018-02-12T17:12:33.962Z
 title: "SFU Multimedialab Website"
+index: "103"
 ---
 
 description of SFU Multimedialab

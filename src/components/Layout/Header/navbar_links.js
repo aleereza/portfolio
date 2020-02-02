@@ -27,12 +27,8 @@ const wrapperStyle = css`
     }
   }
 `
-// const linkStyle = css`
-//   color: red;
-// `
-
 const linkActiveStyle = {
-  backgroundColor: "red",
+  color: "black",
 }
 
 const NavbarLinks = ({ toggle }) => {

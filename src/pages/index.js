@@ -1,50 +1,32 @@
 import React from "react"
+
 import SEO from "../components/seo"
 import SocialLinks from "../components/Social/social_links"
 import { css } from "@emotion/core"
 
 const IndexPage = props => {
-  const projectsData = props.data.allProjects.edges
   const introStyle = css`
     font-size: 3rem;
-    line-height: 1;
+    line-height: 1.3;
+    margin: 1rem 0;
+    p {
+      margin: 0;
+      text-align: center;
+    }
     /* font-family: "Montserrat"; */
   `
+
   return (
     <>
       <SEO title="Home" />
-      <p css={introStyle}>
-        I am a front-end developer, mostly enjoying React and Gatsby.
-      </p>
-      <p css={introStyle}>
-        and I am an AWS certified developer and interested in DevOps.
-      </p>
+      <article css={introStyle}>
+        <p>I am a front-end developer, mostly enjoying React and Gatsby.</p>
+        <p>and I am an AWS certified developer and interested in DevOps.</p>
+      </article>
+
       <SocialLinks />
-      <div>
-        <h1>My Projects:</h1>
-        {projectsData.map((project, index) => (
-          <p key={index}>{project.node.frontmatter.title}</p>
-        ))}
-      </div>
     </>
   )
 }
 
 export default IndexPage
-
-export const query = graphql`
-  query IndexPageQuery {
-    allProjects: allMarkdownRemark(filter: {}) {
-      edges {
-        node {
-          frontmatter {
-            date
-            path
-            title
-          }
-          html
-        }
-      }
-    }
-  }
-`
