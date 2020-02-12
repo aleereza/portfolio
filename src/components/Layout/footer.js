@@ -1,6 +1,7 @@
 import React from "react"
 import { css } from "@emotion/core"
 import { containerInStyle, containerOutStyle } from "../../data/styles"
+import { contact } from "../../data/info"
 
 const footerStyle = css`
   position: fixed;
@@ -10,7 +11,7 @@ const footerStyle = css`
 
 const Footer = () => (
   <footer css={[containerOutStyle, footerStyle]}>
-    <div css={containerInStyle}>footer</div>
+    <div css={containerInStyle}>{contact.email}</div>
   </footer>
 )
 

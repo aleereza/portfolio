@@ -13,17 +13,23 @@ const IndexPage = props => {
       margin: 0;
       text-align: center;
     }
-    /* font-family: "Montserrat"; */
   `
+
+  // const introContainerStyle = css`
+
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  // `
 
   return (
     <>
       <SEO title="Home" />
+
       <article css={introStyle}>
         <p>I am a front-end developer, mostly enjoying React and Gatsby.</p>
         <p>and I am an AWS certified developer and interested in DevOps.</p>
       </article>
-
       <SocialLinks />
     </>
   )

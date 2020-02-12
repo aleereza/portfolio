@@ -1,7 +1,5 @@
 import React from "react"
 import SEO from "../components/seo"
-
-import { Link } from "gatsby"
 import Project from "../components/Projects/project"
 
 const ProjectsPage = props => {
@@ -22,14 +20,14 @@ const ProjectsPage = props => {
   return (
     <>
       <SEO title="Projects" />
-      <h1>Projects page</h1>
       <div>
-        <h1>My Projects:</h1>
         {projectsData.map((project, index) => (
           <Project
             index={project.node.frontmatter.index}
             title={project.node.frontmatter.title}
             path={project.node.frontmatter.path}
+            source={project.node.frontmatter.source}
+            website={project.node.frontmatter.website}
             html={project.node.html}
             image={allProjectImageData[project.node.frontmatter.index]}
           />
@@ -49,6 +47,8 @@ export const query = graphql`
             index
             path
             title
+            source
+            website
           }
           html
         }
