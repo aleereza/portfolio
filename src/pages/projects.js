@@ -1,6 +1,7 @@
 import React from "react"
 import SEO from "../components/seo"
 import Project from "../components/Projects/project"
+import { graphql } from "gatsby"
 
 const ProjectsPage = props => {
   const projectsData = props.data.allProjects.edges
