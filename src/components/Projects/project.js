@@ -1,6 +1,5 @@
 import React from "react"
 import { css } from "@emotion/core"
-import { Link } from "gatsby"
 import Img from "gatsby-image"
 
 const flexContainerStyle = css`
@@ -12,9 +11,16 @@ const flexContainerStyle = css`
 const textContainerStyle = css`
   text-align: center;
   margin: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.3;
   flex: 1 1 0;
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  @media (min-width: 480px) {
+    font-size: 2rem;
+  }
 `
 
 const imageContainerStyle = css`
@@ -40,7 +46,7 @@ const Project = props => {
           </a>
           <span> | </span>
           <a href={props.source}>
-            <small>Source</small>
+            <small style={{ color: "#6d6d6d" }}>Source</small>
           </a>
           {/* <p dangerouslySetInnerHTML={{ __html: props.html }} /> */}
         </article>

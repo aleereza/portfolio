@@ -1,5 +1,4 @@
 import React from "react"
-import AnchorLink from "react-anchor-link-smooth-scroll"
 import { css } from "@emotion/core"
 import { navbarLinks } from "../../../data/info"
 import { Link } from "gatsby"
@@ -10,7 +9,7 @@ const wrapperStyle = css`
   a {
     color: #6d6d6d;
     text-decoration: none;
-    margin-bottom: 1rem;
+    margin: 2rem auto 0 auto;
     &:last-child {
       margin-bottom: unset;
     }
@@ -19,8 +18,7 @@ const wrapperStyle = css`
   @media (min-width: 480px) {
     flex-direction: row;
     a {
-      margin-bottom: 0;
-      margin-right: 1rem;
+      margin: 0 0 0 1rem;
       &:last-child {
         margin-right: unset;
       }
