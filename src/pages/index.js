@@ -25,7 +25,7 @@ const IndexPage = props => {
       <SEO title="Home" />
 
       <article css={introStyle}>
-        <p>I am a front-end developer, mostly enjoying React and Gatsby.</p>
+        <p>I am a front-end developer, mostly enjoy React and Gatsby.</p>
         <p>and I am an AWS certified developer.</p>
       </article>
       <SocialLinks />
